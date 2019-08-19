@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "StorjDemo",
+		"_postman_id": "0ec2cb05-4da4-79f5-b353-c04dd7579191",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transfer",
+			"request": {
+				"url": "http://127.0.0.1:3001/storj/transfer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"toAddress\" : \"0x8AAA152C14ac778d057239419C71eF98Bf1eF47c\",\n\t\"amount\" : \"10\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "mint",
+			"request": {
+				"url": "http://127.0.0.1:3001/storj/mint",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"toAddress\" : \"0x8AAA152C14ac778d057239419C71eF98Bf1eF47c\",\n\t\"amount\" : \"10\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getTransaction",
+			"request": {
+				"url": "http://127.0.0.1:3001/storj/transaction/0x50fffb300cedfcd432aa5849bc33112c69b66320d13035fcc17866fbb1ec4097",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"toAddress\" : \"0xDFEAedB1146d9BE096fe1149A9C97a4B531C4AAe\",\n\t\"amount\" : \"10\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
